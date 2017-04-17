@@ -3031,6 +3031,36 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
+gocool-github-demo-plugin@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/gocool-github-demo-plugin/-/gocool-github-demo-plugin-0.1.7.tgz#32ec0de6ded2505b3571e6c3d3244b3915600df5"
+  dependencies:
+    gocool "^0.1.2"
+
+gocool@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.2.tgz#2354780afd96f3f8d932b0be6ebfeba4b1e50cfa"
+  dependencies:
+    body-parser "^1.17.1"
+    compression "^1.6.2"
+    cookie-parser "^1.4.3"
+    express "^4.15.2"
+    helmet "^3.5.0"
+    passport "^0.3.2"
+    strong-params "^0.7.1"
+
+gocool@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.3.tgz#dc83d29bfb3ff8012e93a9b0bb0b3ced9d531c78"
+  dependencies:
+    body-parser "^1.17.1"
+    compression "^1.6.2"
+    cookie-parser "^1.4.3"
+    express "^4.15.2"
+    helmet "^3.5.0"
+    passport "^0.3.2"
+    strong-params "^0.7.1"
+
 google-libphonenumber@^2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/google-libphonenumber/-/google-libphonenumber-2.0.14.tgz#c7496aceb9fc4c7d47c6148985da881814fddd2e"
@@ -6139,15 +6169,15 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.6, rimraf@^2.2.8, rimraf@^2.3.3, rimraf@^2.4.0, rimraf@^2.4.4, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@~2.5.1, rimraf@~2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
+rimraf@2, rimraf@^2.2.6, rimraf@^2.2.8, rimraf@^2.3.3, rimraf@^2.4.0, rimraf@^2.4.4, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
     glob "^7.0.5"
 
-rimraf@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
+rimraf@~2.5.1, rimraf@~2.5.4:
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
   dependencies:
     glob "^7.0.5"
 
