@@ -1718,17 +1718,23 @@ debug-log@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debug-log/-/debug-log-1.0.1.tgz#2307632d4c04382b8df8a32f70b895046d52745f"
 
-debug@*, debug@2, debug@2.6.1, debug@2.X, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+debug@*, debug@2, debug@2.X, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
-    ms "0.7.2"
+    ms "0.7.3"
 
 debug@2.2.0, debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
+
+debug@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+  dependencies:
+    ms "0.7.2"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
@@ -2324,6 +2330,10 @@ event-stream@^3.2.1, event-stream@~3.3.0:
     split "0.3"
     stream-combiner "~0.0.4"
     through "~2.3.1"
+
+eventemitter2@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/eventemitter2/-/eventemitter2-4.1.0.tgz#b1fb8a1144e7dfcf80cecce9877ff6d68e7d8506"
 
 exec-buffer@^3.0.0:
   version "3.1.0"
@@ -3031,31 +3041,21 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
-gocool-github-demo-plugin@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/gocool-github-demo-plugin/-/gocool-github-demo-plugin-0.1.7.tgz#32ec0de6ded2505b3571e6c3d3244b3915600df5"
+gocool-github-demo-plugin@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/gocool-github-demo-plugin/-/gocool-github-demo-plugin-0.1.9.tgz#6c5a1af99eee3edd0a4aa97c6cd250bd3eec57b1"
   dependencies:
-    gocool "^0.1.2"
+    gocool "^0.1.6"
 
-gocool@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.2.tgz#2354780afd96f3f8d932b0be6ebfeba4b1e50cfa"
+gocool@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.6.tgz#9ef782db4c79cf5aff223ea1c97a4cb4ebf933d3"
   dependencies:
     body-parser "^1.17.1"
     compression "^1.6.2"
     cookie-parser "^1.4.3"
-    express "^4.15.2"
-    helmet "^3.5.0"
-    passport "^0.3.2"
-    strong-params "^0.7.1"
-
-gocool@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.3.tgz#dc83d29bfb3ff8012e93a9b0bb0b3ced9d531c78"
-  dependencies:
-    body-parser "^1.17.1"
-    compression "^1.6.2"
-    cookie-parser "^1.4.3"
+    debug "^2.6.4"
+    eventemitter2 "^4.1.0"
     express "^4.15.2"
     helmet "^3.5.0"
     passport "^0.3.2"
@@ -4780,6 +4780,10 @@ ms@0.7.1:
 ms@0.7.2, ms@^0.7.1:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
+
+ms@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.3.tgz#708155a5e44e33f5fd0fc53e81d0d40a91be1fff"
 
 ms@1.0.0:
   version "1.0.0"
