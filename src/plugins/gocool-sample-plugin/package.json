@@ -1,0 +1,4 @@
+{
+  "name": "gocool-sample-plugin",
+  "main": "lib/index.js"
+}

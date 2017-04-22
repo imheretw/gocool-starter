@@ -10,6 +10,7 @@ import config from 'config/appConfig';
 import routes from 'app/routes';
 
 import GithubDemoPlugin from 'gocool-github-demo-plugin';
+import SamplePlugin from 'gocool-sample-plugin';
 
 dotenv.config();
 
@@ -30,6 +31,7 @@ server
     new PassportHandler(),
   ])
   .addPlugin('/github-demo', GithubDemoPlugin)
+  .addPlugin('/sample', SamplePlugin)
   .addExpressPlugins([
     { path: '/kue', content: kue.app },
   ])
