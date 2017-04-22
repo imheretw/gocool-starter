@@ -1,6 +1,6 @@
 {
   "name": "imhere",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A integrated node framework",
   "main": "src/server.js",
   "repository": "git@github.com:imheretw/imhere.git",
