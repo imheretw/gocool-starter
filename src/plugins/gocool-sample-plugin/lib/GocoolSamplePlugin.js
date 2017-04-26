@@ -7,8 +7,8 @@ export default class GocoolSamplePlugin extends Plugin {
 
     this._logger = new Logger('GocoolSamplePlugin');
 
-    this.on(Server.EVENTS.STARTED, () => {
-      this._init();
+    this.on(Server.EVENTS.STARTED, (server) => {
+      this._init(server);
     });
   }
 
@@ -16,7 +16,7 @@ export default class GocoolSamplePlugin extends Plugin {
     return [new Router().expressRouter];
   }
 
-  _init() {
+  _init(server) {
     this._logger.debug('Init gocool sample plugin after server started');
   }
 }

@@ -46,7 +46,7 @@
     "fermata": "^0.11.0-beta1",
     "fs-readfile-promise": "^3.0.0",
     "github": "^9.2.0",
-    "gocool": "^0.1.6",
+    "gocool": "^0.1.8",
     "gocool-github-demo-plugin": "^0.1.9",
     "google-libphonenumber": "^2.0.14",
     "helmet": "^3.5.0",
