@@ -269,7 +269,7 @@ async@^1.2.1, async@^1.4.0, async@^1.5.0, async@^1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
-async@^2.3.0:
+async@^2.3.0, async@^2.x:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
   dependencies:
@@ -1696,6 +1696,12 @@ dashify@^0.2.0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/dashify/-/dashify-0.2.2.tgz#6a07415a01c91faf4a32e38d9dfba71f61cb20fe"
 
+data-elevator@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/data-elevator/-/data-elevator-2.2.2.tgz#ac27c8d976c2b893b1ae6170f756970fe3ddff17"
+  dependencies:
+    async "^2.x"
+
 dateformat@^1.0.11, dateformat@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-1.0.12.tgz#9f124b67594c937ff706932e4a642cca8dbbfee9"
@@ -1718,23 +1724,23 @@ debug-log@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debug-log/-/debug-log-1.0.1.tgz#2307632d4c04382b8df8a32f70b895046d52745f"
 
-debug@*, debug@2.X, debug@^2.6.4:
+debug@*, debug@2, debug@2.X, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.4:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
     ms "0.7.3"
-
-debug@2, debug@2.6.1, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
-  dependencies:
-    ms "0.7.2"
 
 debug@2.2.0, debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
+
+debug@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+  dependencies:
+    ms "0.7.2"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
@@ -3047,21 +3053,7 @@ gocool-github-demo-plugin@^0.1.9:
   dependencies:
     gocool "^0.1.6"
 
-gocool@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.6.tgz#9ef782db4c79cf5aff223ea1c97a4cb4ebf933d3"
-  dependencies:
-    body-parser "^1.17.1"
-    compression "^1.6.2"
-    cookie-parser "^1.4.3"
-    debug "^2.6.4"
-    eventemitter2 "^4.1.0"
-    express "^4.15.2"
-    helmet "^3.5.0"
-    passport "^0.3.2"
-    strong-params "^0.7.1"
-
-gocool@^0.1.8:
+gocool@^0.1.6, gocool@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.8.tgz#ca69b5f4228a6d668be17641433cbfd0c288eac3"
   dependencies:

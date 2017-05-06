@@ -20,6 +20,8 @@
     "db:migrate": "knex migrate:latest --knexfile ./src/config/knexConfig.js --cwd .",
     "db:rollback": "knex migrate:rollback --knexfile ./src/config/knexConfig.js --cwd .",
     "db:seed": "knex seed:run --knexfile ./src/config/knexConfig.js --cwd .",
+    "db:data:migrate": "node src/database/dataMigrations/elevator.js move top --working-dir='src/database/dataMigrations/' --config-dir='src/database/dataMigrations/' --verbose",
+    "db:data:migrate:make": "node src/database/dataMigrations/elevator.js add --working-dir='src/database/dataMigrations/' --config-dir='src/database/dataMigrations/'",
     "command:job:my": "babel-node ./src/commands/job.js my",
     "eslint-pre-commit": "./bin/eslint-pre-commit.sh",
     "changelog": "standard-changelog"
@@ -39,6 +41,7 @@
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "crypto-js": "^3.1.9-1",
+    "data-elevator": "^2.2.2",
     "dotenv": "^4.0.0",
     "es6-error": "^4.0.2",
     "express": "^4.15.2",
