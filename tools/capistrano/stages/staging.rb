@@ -3,6 +3,7 @@ set :user, ENV["STAGING_USER"]
 
 role :app, ENV['STAGING_HOST']
 role :web, ENV['STAGING_HOST']
+role :db,  ENV['STAGING_HOST']
 
 set :deploy_to, ENV['STAGING_DEPLOY_TO']
 
