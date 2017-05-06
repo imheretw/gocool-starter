@@ -11,3 +11,5 @@
 
 /.nyc_output
 /coverage
+
+/src/database/dataMigrations/level/current_level.json
