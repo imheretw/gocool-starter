@@ -46,9 +46,9 @@ Node.js web developer is now easily to start developing web application in minut
 Startup services
 ```shell
 > docker-compose up -d
-Creating imhere_redis_1
-Creating imhere_mysql_1
-Creating imhere_phpmyadmin_1
+Creating gocoolstarter_redis_1
+Creating gocoolstarter_mysql_1
+Creating gocoolstarter_phpmyadmin_1
 ```
 
 Install tools
@@ -95,7 +95,7 @@ Start the service
 yarn start v0.18.1
 $ gulp serve
 [19:25:50] Requiring external module babel-register
-[19:25:50] Using gulpfile ~/projects/nodejs/imhere/gulpfile.babel.js
+[19:25:50] Using gulpfile ~/projects/nodejs/gocool-starter/gulpfile.babel.js
 [19:25:51] Starting 'styles'...
 [19:25:51] Starting 'images'...
 [19:25:51] Starting 'attachments'...
@@ -209,3 +209,6 @@ Kue page: http://localhost:5000/kue
   * **`cap dev deploy`** deploy to dev server
   * **`cap staging deploy`** deploy to staging server
   * **`cap production deploy`** deploy to production server
+
+# Plugins
+* [gocool-elasticsearch](https://github.com/imheretw/gocool-elasticsearch)
