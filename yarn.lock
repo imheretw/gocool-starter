@@ -1728,23 +1728,23 @@ debug-log@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debug-log/-/debug-log-1.0.1.tgz#2307632d4c04382b8df8a32f70b895046d52745f"
 
-debug@*, debug@2.X, debug@^2.6.4:
+debug@*, debug@2, debug@2.X, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0, debug@^2.6.4:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
     ms "0.7.3"
-
-debug@2, debug@2.6.1, debug@^2.1.1, debug@^2.1.3, debug@^2.2.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
-  dependencies:
-    ms "0.7.2"
 
 debug@2.2.0, debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
   dependencies:
     ms "0.7.1"
+
+debug@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
+  dependencies:
+    ms "0.7.2"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
@@ -1937,6 +1937,13 @@ dont-sniff-mimetype@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dont-sniff-mimetype/-/dont-sniff-mimetype-1.0.0.tgz#5932890dc9f4e2f19e5eb02a20026e5e5efc8f58"
 
+dot-object@^1.5.4:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/dot-object/-/dot-object-1.6.0.tgz#61c61ca764ea780cb563fe3b51a56d0cf5aa4070"
+  dependencies:
+    commander "^2.9.0"
+    glob "^7.0.5"
+
 dot-prop@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-3.0.0.tgz#1b708af094a49c9a0e7dbcad790aba539dac1177"
@@ -2019,6 +2026,27 @@ ecdsa-sig-formatter@1.0.9:
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+
+elasticsearch-odm-5@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/elasticsearch-odm-5/-/elasticsearch-odm-5-0.4.1.tgz#cc5e5d17b706892e60f0510a02f66fcb6da91f17"
+  dependencies:
+    bluebird "^3.4.6"
+    dot-object "^1.5.4"
+    elasticsearch "^12.1.3"
+    kareem "^1.1.3"
+    lodash "^4.17.2"
+    pluralize "^3.0.0"
+    winston "^2.3.0"
+
+elasticsearch@^12.1.3:
+  version "12.1.3"
+  resolved "https://registry.yarnpkg.com/elasticsearch/-/elasticsearch-12.1.3.tgz#5108e67ae5d83e5e7f30d3d294fd7017df0e3771"
+  dependencies:
+    chalk "^1.0.0"
+    forever-agent "^0.6.0"
+    lodash "^4.12.0"
+    promise "^7.1.1"
 
 electron-to-chromium@^1.2.7:
   version "1.3.3"
@@ -2659,7 +2687,7 @@ foreground-child@^1.3.3, foreground-child@^1.5.3:
     cross-spawn "^4"
     signal-exit "^3.0.0"
 
-forever-agent@~0.6.1:
+forever-agent@^0.6.0, forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
 
@@ -3051,27 +3079,20 @@ glogg@^1.0.0:
   dependencies:
     sparkles "^1.0.0"
 
-gocool-github-demo-plugin@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/gocool-github-demo-plugin/-/gocool-github-demo-plugin-0.1.9.tgz#6c5a1af99eee3edd0a4aa97c6cd250bd3eec57b1"
+gocool-elasticsearch@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gocool-elasticsearch/-/gocool-elasticsearch-0.1.1.tgz#89ce6b044ad4af2ba5246324557b50952ced6bb3"
   dependencies:
-    gocool "^0.1.6"
+    elasticsearch-odm-5 "^0.4.1"
+    gocool "^0.2.0"
 
-gocool@^0.1.6:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.1.8.tgz#ca69b5f4228a6d668be17641433cbfd0c288eac3"
+gocool-github-demo-plugin@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/gocool-github-demo-plugin/-/gocool-github-demo-plugin-0.1.10.tgz#5689a8a385986b6f25c376ffc41ce4375af8d5c5"
   dependencies:
-    body-parser "^1.17.1"
-    compression "^1.6.2"
-    cookie-parser "^1.4.3"
-    debug "^2.6.4"
-    eventemitter2 "^4.1.0"
-    express "^4.15.2"
-    helmet "^3.5.0"
-    passport "^0.3.2"
-    strong-params "^0.7.1"
+    gocool "^0.2.0"
 
-gocool@^0.2.2:
+gocool@^0.2.0, gocool@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/gocool/-/gocool-0.2.2.tgz#27911f3419ba7734ec15d7e14a4670ab4f394619"
   dependencies:
@@ -4242,6 +4263,10 @@ jws@^3.0.0, jws@^3.1.4:
     jwa "^1.1.4"
     safe-buffer "^5.0.1"
 
+kareem@^1.1.3:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-1.5.0.tgz#e3e4101d9dcfde299769daf4b4db64d895d17448"
+
 kind-of@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.1.0.tgz#475d698a5e49ff5e53d14e3e732429dc8bf4cf47"
@@ -4537,7 +4562,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@*, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.0, lodash@~4.17.2:
+lodash@*, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.12.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.0, lodash@~4.17.2:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -5437,6 +5462,10 @@ plur@^2.0.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
+
+pluralize@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-3.1.0.tgz#84213d0a12356069daa84060c559242633161368"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -7297,7 +7326,7 @@ window-size@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.2.0.tgz#b4315bb4214a3d7058ebeee892e13fa24d98b075"
 
-winston@^2.3.1:
+winston@^2.3.0, winston@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/winston/-/winston-2.3.1.tgz#0b48420d978c01804cf0230b648861598225a119"
   dependencies:
