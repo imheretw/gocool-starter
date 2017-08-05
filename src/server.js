@@ -30,8 +30,8 @@ server
     new JobHandler(),
     new PassportHandler(),
   ])
-  .addPlugin('/github-demo', GithubDemoPlugin)
-  .addPlugin('/sample', SamplePlugin)
+  .addPlugin(new GithubDemoPlugin(), '/github-demo')
+  .addPlugin(new SamplePlugin(), '/sample')
   .addExpressPlugins([
     { path: '/kue', content: kue.app },
   ])
