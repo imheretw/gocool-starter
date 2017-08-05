@@ -9,6 +9,7 @@ import PassportHandler from 'app/boots/PassportHandler';
 import config from 'config/appConfig';
 import routes from 'app/routes';
 
+import ElasticsearchPlugin from 'gocool-elasticsearch';
 import GithubDemoPlugin from 'gocool-github-demo-plugin';
 import SamplePlugin from 'gocool-sample-plugin';
 
@@ -32,6 +33,7 @@ server
   ])
   .addPlugin(new GithubDemoPlugin(), '/github-demo')
   .addPlugin(new SamplePlugin(), '/sample')
+  .addPlugin(new ElasticsearchPlugin('gocool'))
   .addExpressPlugins([
     { path: '/kue', content: kue.app },
   ])

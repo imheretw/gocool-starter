@@ -6,7 +6,7 @@ mysql:
     - 3306:3306
 phpmyadmin:
   image: phpmyadmin/phpmyadmin
-  links: 
+  links:
     - mysql
   environment:
     PMA_HOST: mysql
@@ -15,4 +15,9 @@ phpmyadmin:
 redis:
   image: redis:3.0.7
   ports:
-    - 6379:6379 
+    - 6379:6379
+elasticsearch:
+  image: elasticsearch:5.1.1
+  ports:
+    - 9200:9200
+    - 9300:9300

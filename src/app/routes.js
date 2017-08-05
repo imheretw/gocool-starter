@@ -9,6 +9,7 @@ router.route('get', '/', ApplicationController, 'index');
 
 router.route('get', '/api/users/current', UsersController, 'currentUser');
 router.route('post', '/api/users/login', UsersController, 'login');
+router.route('get', '/api/users/test', UsersController, 'test');
 router.resource('/api/users', UsersController);
 
 export default router.expressRouter;

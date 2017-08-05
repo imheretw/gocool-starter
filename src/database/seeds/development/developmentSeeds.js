@@ -1,3 +1,4 @@
+import 'server';
 import Cleaner from '../components/Cleaner';
 import UsersSeeder from '../components/UsersSeeder';
 import SeedRunner from '../helpers/SeedRunner';

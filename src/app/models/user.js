@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 import Logger from 'Logger';
 import config from 'config/appConfig';
 import { ModelBase } from 'database';
+import UserIndex, { transform } from 'indexes/UserIndex';
 
 export const TYPE_DEMO_USER = 'DemoUser';
 export const TYPE_LIMITED_ACCESS_USER = 'LimitedAccessUser';
@@ -14,6 +15,10 @@ const User = ModelBase.extend({
   tableName: 'users',
   hasTimestamps: true,
 
+  initialize() {
+    this.on('saved', this.savedHooks);
+  },
+
   validatePassword(candidatePassword, cb) {
     const cryptedPassword = bcrypt.hashSync(candidatePassword, config.auth.bcryptSalt);
     if (cryptedPassword === this.get('encrypted_password')) {
@@ -21,6 +26,13 @@ const User = ModelBase.extend({
     } else {
       cb('password is invalid');
     }
+  },
+
+  async savedHooks(model, resp, options) {
+    // force indexing data after search terms extracted.
+    const userIndex = new UserIndex(transform(model));
+
+    await userIndex.save();
   },
 });
 

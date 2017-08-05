@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import User from 'models/user';
 import Seeder from './Seeder';
 import users from '../data/users';
 
@@ -11,7 +12,8 @@ export default class UsersSeeder extends Seeder {
       });
 
       user = _.omitBy(user, (value, key) => _.startsWith(key, 'join'));
-      return this.knex('users').insert(user);
+
+      return User.forge(user).save(null, { method: 'insert' });
     });
 
     return Promise.all(promises);

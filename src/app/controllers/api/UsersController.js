@@ -4,6 +4,7 @@ import bcrypt from 'bcrypt';
 
 import { Controller } from 'gocool';
 import User from 'models/user';
+import UserIndex, { transform } from 'indexes/UserIndex';
 import jwtMiddleware from 'middlewares/jwtMiddleware';
 import config from 'config/appConfig';
 import Logger from 'Logger';
@@ -28,6 +29,15 @@ export default class UserController extends Controller {
                 });
 
     this.res.json({ users, pagination: users.pagination });
+  }
+
+  async test() {
+    const user = await User.findOne({ id: 1 });
+    const userIndex = new UserIndex(transform(user));
+    userIndex.set({ id: 1 });
+
+    const document = await userIndex.save();
+    this.res.json({ document });
   }
 
   async show() {
